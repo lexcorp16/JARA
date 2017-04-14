@@ -1,0 +1,14 @@
+Why use React?
+
+* React potentially makes writing javascript easier by means of the JSX syntax which allows developers combine javascript and HTML thereby making component creation easy.
+
+* The ability to create, combine and manipulate components is making react increasingly popular as Componentized UI is the future of web development.
+
+* React creates its own virtual DOM where your components actually live. This approach gives you enormous flexibility and amazing gains in performance because React calculates what changes need to be made in the DOM beforehand and updates the DOM tree accordingly. This way, React avoids costly DOM operations and makes updates in a very efficient manner.
+
+* The UI readable and easily maintained.
+
+* Once you get comfortable with building web application with React, you can easily switch to building mobile application using React Native. Though it is not directly related to React, React Native follows same design patterns, making the transition easier.
+
+
+
