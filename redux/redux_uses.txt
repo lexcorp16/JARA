@@ -1,0 +1,9 @@
+Redux is a predictable state container for Javascript applications. It enables developers write applications that will behave as expected in various environments.
+
+Why use Redux?
+
+* Unlike the MVC architecture where a model can update another model, then a view can update a model, which updates another model, and this, in turn, might cause another view to update. At some point, you no longer understand what happens in your app as you have lost control over the when, why, and how of its state. Application state is immutable in Redux and can only be changed by dispatching actions making it very easy to track where changes emanated from.
+
+* State changes are very fast in redux since the reducer function doesnt change the current (soon to be previous)state. It could easily draw upon that to build a new state hence unchanged state nodes do not need to be re-rendered.
+
+* In Redux the state of your whole application is stored in an object tree within a single store (single source of truth). This makes it easy to create universal apps, as the state from your server can be serialized and hydrated into the client with no extra coding effort. A single state tree also makes it easier to debug or inspect an application.
