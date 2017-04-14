@@ -1,0 +1,11 @@
+Why use Webpack?
+
+* Your codebase can be split into multiple chunks and those chunks can be loaded on demand reducing the initial loading time of your application. 
+
+* It can build and bundle CSS, preprocessed CSS, compile-to-JS languages (like CoffeeScript), images and more by utilising webpack loaders
+
+* Can be used to minify js files using 'webpack -p'
+
+* Eliminates the need for multiple http requests to load several js files
+
+Essentially, webpack is a build tool that aims to improve the web development workflow as much as possible. All your assets are considered modules themselves, that can be imported, modified, manipulated, and that ultimately can be packed into your final bundle as required.
