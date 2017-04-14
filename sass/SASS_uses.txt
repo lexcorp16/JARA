@@ -1,0 +1,10 @@
+Why use SASS?
+
+* Increased efficiency through the use of partials and imports as well as the use of variables.
+
+* Improves code reusability by means of mixins and inheritance thereby making the code as DRY as possible.
+
+* Improved modularity by means of nesting.
+
+
+Writing SASS feels a lot like how one would write code in an actual programming language and this I think is a very neat feature.

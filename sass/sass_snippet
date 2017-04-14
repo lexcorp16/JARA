@@ -1,0 +1,157 @@
+//SASS is a preprocessor for CSS and grants access to a number of important features unavailable in CSS by default
+
+
+/*use of variables improves readability and makes these values available for reuse. Also
+it facilitates making of changes as the change has to be effected in only one place*/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+/*The concept of nesting helps to write CSS in a hierarchiecal way which makes it easier to view 
+  parent-children relationships mirroring HTML syntax and ultimately making it more readable*/
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+/*The concept of Partials and Import help SASS be more efficient as the import statements 
+do not make an extra HTTP request as seen in plain CSS. Instead, upon generating the CSS from the SASS file
+the imported file is simply combined with the file requiring the import*/
+
+//SASS partial file to be imported (_reset.scss)
+
+html,
+body,
+ul,
+ol {
+   margin: 0;
+  padding: 0;
+}
+
+//file requiring the import (base.scss)
+
+@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+
+//The generated CSS file
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+/*The concept of Mixins mirror functions in basic programming and 
+allows one to make a group of CSS declarations to be reused a number of times  
+in a project. Parameters can even be passed into mixins increasing flexibility*/
+
+//The mixin(i like to think of it as a function)
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//The 'function call'
+.box { 
+	@include border-radius(10px);
+}
+
+//The generated CSS
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+/*The extend/inheritance feature of SASS is probably my favourite. It limits repitition 
+to the barest minimum as it enables one to share CSS properties from one selector to another.
+It also helps to prevent the need to write multiple class names on HTML elements.*/
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+
+/*Just when I thought SASS couldnt be any similar to a fully fledged programming language, It 
+permits the use of basic math operators on numerical property values.*/
+
+.container { 
+	width: 100%; 
+}
+
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+//The generated CSS
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+
+
+
+
