@@ -7,3 +7,7 @@ Why use Redux?
 * State changes are very fast in redux since the reducer function doesnt change the current (soon to be previous)state. It could easily draw upon that to build a new state hence unchanged state nodes do not need to be re-rendered.
 
 * In Redux the state of your whole application is stored in an object tree within a single store (single source of truth). This makes it easy to create universal apps, as the state from your server can be serialized and hydrated into the client with no extra coding effort. A single state tree also makes it easier to debug or inspect an application.
+
+* Developers can track everything going on in the app in real time, from actions to state changes.
+
+* The first rule of writing testable code is to write small functions that do only one thing and that are independent. Redux’s code is mostly functions that are just that: small, pure and isolated.
