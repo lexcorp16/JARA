@@ -6,5 +6,7 @@ Why use SASS?
 
 * Improved modularity by means of nesting.
 
+* Sass will not only let you scale styles when working on big web development projects, it will also make it much faster and efficient to write reusable styles from scratch for smaller projects.
+
 
 Writing SASS feels a lot like how one would write code in an actual programming language and this I think is a very neat feature.
