@@ -2,10 +2,12 @@ Why use Javascript ES6?
 
 * Support for the use of constants which facilitates the use of immutable values in code.
 
+* Template literals make string updates and concatenation easier
+
 * Arrow functions which make defining functions much easier than the traditional function expressions introducing brevity in code.
 
 * Classes can now be defined more intuitively in ES6.
 
-* The use of modules in ES6 is much easier as they cna easily be written, exported and imported into code as required.
+* The use of modules in ES6 is much easier as they can easily be written, exported and imported into code as required.
 
 Basically, ES6 is syntactically better than ES5 and Javascript developers need to begin to make the transition as quickly as possible.
