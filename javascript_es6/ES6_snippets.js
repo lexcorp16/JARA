@@ -1,6 +1,9 @@
-/*Some of the key feature improvements of ES6 over ES5 include classes, 
+/*Some of the key feature improvements of ES6 over ES5 include Template literals, classes, 
 Arrow Functions, Modules, Block Scoping, and Promises. Some of these features are demonstrated below*/
 
+//Template literals enable us write strings with embedded expressions easing string concatenation and update.
+let insert = 'World';
+console.log(`Hello ${insert}`)//outputs 'Hello World'
 
 //An approximation of classes in ES5 could look somewhat like this (using constructor functions)
 function Car( make ) { //approximate a class/constructor
