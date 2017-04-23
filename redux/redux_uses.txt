@@ -10,4 +10,4 @@ Why use Redux?
 
 * Developers can track everything going on in the app in real time, from actions to state changes.
 
-* The first rule of writing testable code is to write small functions that do only one thing and that are independent. Redux’s code is mostly functions that are just that: small, pure and isolated.
+* The first rule of writing testable code is to write small functions that do only one thing and that are independent. Redux’s code is mostly functions that are just that: small, pure and isolated. This makes redux code easily testable
