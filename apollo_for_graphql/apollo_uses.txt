@@ -2,7 +2,7 @@ Why use Apollo for graphql?
 
 * It’s easy to get started with, and extensively documented.
 
-* It works seamlessly with your favorite React community tools like Redux and Recompose.
+* It works seamlessly with your favorite React community tools like Redux.
 
 * It has its own Apollo Developer Tools to help you understand your app.
 
