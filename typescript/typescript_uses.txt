@@ -3,7 +3,8 @@ TypeScript is a superset of JavaScript which primarily provides optional static 
 Why use Typescript?
 
 * Removes the need for a lot of type checks by its inbuilt type enforcing mechanisms and this could effectively increase speed.
-If the codebase is large and has a number of developers working on it, it would make sense to use typescript as its transpiler(compiler that converts code written in one language into another language that has a similar level of abstraction) reaveals a number of obvious mistakes.
+
+* If the codebase is large and has a number of developers working on it, it would make sense to use typescript as its transpiler(compiler that converts code written in one language into another language that has a similar level of abstraction) reaveals a number of obvious mistakes.
 
 * Since Typescript is a superset of Javascript, it can easily integrate the great features of ES6 and any other version of Javascript that is to come.
 
